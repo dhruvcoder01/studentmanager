@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+
+<h2>Student List</h2>
+
+<a href="/add">Add Student</a>
+
+<ul>
+    <% students.forEach(student => { %>
+        <li>
+            <%= student.name %> | <%= student.email %> | <%= student.course %>
+            <a href="/delete/<%= student._id %>">Delete</a>
+        </li>
+    <% }) %>
+</ul>
+
+</body>
+</html>
