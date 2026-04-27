@@ -3,17 +3,22 @@
 <head>
     <title>Add Student</title>
 </head>
-<body>
-    <h2>Add Student</h2>
+<body style="font-family: Arial;">
+
+    <h2 style="color: green;">Add Student Form</h2>
 
     <form action="/add" method="POST">
-        <input type="text" name="name" placeholder="Name" required><br><br>
-        <input type="email" name="email" placeholder="Email" required><br><br>
-        <input type="text" name="course" placeholder="Course" required><br><br>
+        <input type="text" name="name" placeholder="Enter Name" required><br><br>
+        <input type="email" name="email" placeholder="Enter Email" required><br><br>
+        <input type="text" name="course" placeholder="Enter Course" required><br><br>
 
-        <button type="submit">Add Student</button>
+        <button style="background-color: blue; color: white; padding: 8px;">
+            Add Student
+        </button>
     </form>
 
+    <br>
     <a href="/">View Students</a>
+
 </body>
 </html>
